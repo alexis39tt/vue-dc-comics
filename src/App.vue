@@ -1,27 +1,34 @@
 <template>
   <div id="app">
-   
+   <NavBar />
+   <MainContent />
+   <PageFooter />
   </div>
 </template>
 
 <script>
 
+import NavBar from "./components/NavBar.vue"
+import MainContent from "./components/MainContent.vue"
+import PageFooter from "./components/PageFooter.vue"
 
 export default {
   name: 'App',
   components: {
-
+    NavBar,
+    MainContent,
+    PageFooter
   }
 }
 </script>
 
 <style lang="scss">
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 </style>
