@@ -49,7 +49,6 @@ export default {
   .list-item {
     display: flex;
     cursor: pointer;
-    z-index: 2;
     &:hover {
       img {
           transform: scale(1.1);
