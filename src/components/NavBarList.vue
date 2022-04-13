@@ -69,7 +69,6 @@ data() {
 <style scoped lang="scss">
 $dcblue: #0282f9;
 ul{
-    list-style: none;
     display: flex;
     text-transform: uppercase;
     font-weight: bold;
@@ -77,10 +76,12 @@ ul{
     a{
         text-decoration: none;
         color: rgb(48, 48, 48);
+        transition: 0.2s;
     }
     li{
         margin: 0 10px;
         line-height: 105px;
+        transition: 0.2s;
         &:hover{
           border-bottom: 5px solid $dcblue;
           a{

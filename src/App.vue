@@ -28,6 +28,9 @@ export default {
     padding: 0;
     box-sizing: border-box;
   }
+  ul{
+    list-style: none;
+  }
 #app {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

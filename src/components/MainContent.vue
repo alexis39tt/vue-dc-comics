@@ -23,7 +23,7 @@ export default {
 <style lang="scss">
 #maincontent{
     color: white;
-    background: black;
+    background: #1c1c1c;
     h1{
         padding: 50px 15%;
     }

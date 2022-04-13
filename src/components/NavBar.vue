@@ -1,7 +1,7 @@
 <template>
   <div id="navbar">
     <div>
-      <img src="../assets/img/dc-logo.png" alt="logo" />
+      <img :src="`${publicPath}img/dc-logo.png`" alt="logo" />
     </div>
     <div>
       <NavBarList />
@@ -14,6 +14,11 @@
 import NavBarList from "./NavBarList.vue"
 
 export default {
+  data(){
+    return{
+      publicPath: process.env.BASE_URL,
+    }
+  },
   name: "NavBar",
   components: {
     NavBarList

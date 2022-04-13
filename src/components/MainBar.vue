@@ -1,7 +1,7 @@
 <template>
   <div id="mainbar">
     <div v-for="(elm, i) in mainbarlist" :key="i" class="list-item">
-      <img :src="`${publicPath}img/buy-${elm.imgurl}`" :alt="`${elm.name}`">
+      <img :src="`${publicPath}img/buy-${elm.imgurl}`" :alt="`${elm.name}`" />
       <p>{{ elm.name }}</p>
     </div>
   </div>
@@ -45,16 +45,30 @@ export default {
   background: #0282f9;
   display: flex;
   justify-content: center;
-  padding: 50px 0;
-  p {
-    text-transform: uppercase;
-  }
-  .list-item{
-      display: flex;
-      margin: 0 10px;
-      img{
-          min-width: 10%;
+  padding: 20px 0;
+  .list-item {
+    display: flex;
+    cursor: pointer;
+    z-index: 2;
+    &:hover {
+      img {
+          transform: scale(1.1);
       }
+      p{
+          text-decoration: underline;
+      }
+    }
+    img {
+      max-width: 40%;
+      height: 60%;
+      margin: auto 20px;
+      transition: 0.2s;
+    }
+    p {
+      text-transform: uppercase;
+      margin: auto 0;
+      min-width: 120px;
+    }
   }
 }
 </style>
